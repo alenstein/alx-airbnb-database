@@ -54,7 +54,7 @@ List of each entity and its corresponding attributes:
 * sent_at: TIMESTAMP, DEFAULT CURRENT_TIMESTAMP
 
 Relationships Between Entities:
-Here's how the entities are related:
+
 
 User and Property:
 
