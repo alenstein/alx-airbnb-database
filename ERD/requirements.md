@@ -1,5 +1,5 @@
 Entities and Their Attributes:
-Here's a list of each entity and its corresponding attributes:
+List of each entity and its corresponding attributes:
 
 1. User
 * user_id: Primary Key, UUID, Indexed
