@@ -95,3 +95,9 @@ User and Message (Recipient):
 Relationship: A User can receive multiple Message entities. A Message is received by one User.
 Type: One-to-Many (User to Message as recipient)
 Foreign Key: Message.recipient_id references User.user_id.
+
+
+# Visual representation of the ER diagram.
+
+
+![image](https://github.com/user-attachments/assets/ddc33b1b-4061-43be-b6c9-2c58c1b1dee5)
