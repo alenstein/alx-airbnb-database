@@ -16,6 +16,7 @@ INNER JOIN
 
 -- Query 2: LEFT JOIN
 -- Retrieve all properties and their reviews, including properties that have no reviews.
+-- Added ORDER BY clause for consistent output.
 SELECT
     P.PropertyID,
     P.PropertyName,
@@ -28,8 +29,10 @@ FROM
     Properties P
 LEFT JOIN
     Reviews R ON P.PropertyID = R.PropertyID
-LEFT JOIN -- Optional: Join to get reviewer's name if UserID is in Reviews table
-    Users U_Reviewer ON R.UserID = U_Reviewer.UserID;
+LEFT JOIN 
+    Users U_Reviewer ON R.UserID = U_Reviewer.UserID
+ORDER BY 
+    P.PropertyID ASC, R.ReviewID ASC;
 
 -- Query 3: FULL OUTER JOIN
 -- Retrieve all users and all bookings, even if the user has no booking or a booking is not linked to a user.
@@ -43,5 +46,4 @@ FROM
     Users U
 FULL OUTER JOIN
     Bookings B ON U.UserID = B.UserID;
-
 
